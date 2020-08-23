@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad11_0rounded" orientation="portrait" layout="fullscreen" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,51 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="unit_convertor" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Unit-Convertor-WP" translatesAutoresizingMaskIntoConstraints="NO" id="g9o-nA-3xD">
+                                <rect key="frame" x="0.0" y="0.0" width="834" height="1194"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="unit-convertor-logo" translatesAutoresizingMaskIntoConstraints="NO" id="Ppa-6z-52C">
+                                <rect key="frame" x="0.0" y="10" width="834" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="160" id="Qgp-yh-01r"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Unit Convertor" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E2Q-hY-jgb">
+                                <rect key="frame" x="120" y="180" width="594" height="35"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Ppa-6z-52C" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Clk-eb-fAj"/>
+                            <constraint firstItem="g9o-nA-3xD" firstAttribute="leading" secondItem="Ppa-6z-52C" secondAttribute="leading" id="FJ7-CE-L8z"/>
+                            <constraint firstItem="E2Q-hY-jgb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="120" id="GB2-0G-45c"/>
+                            <constraint firstAttribute="bottom" secondItem="g9o-nA-3xD" secondAttribute="bottom" id="KCY-zM-Fbu"/>
+                            <constraint firstItem="g9o-nA-3xD" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="aLe-0g-npm"/>
+                            <constraint firstItem="g9o-nA-3xD" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="bgI-KV-g7K"/>
+                            <constraint firstItem="g9o-nA-3xD" firstAttribute="centerX" secondItem="Ppa-6z-52C" secondAttribute="centerX" id="cJg-6F-raa"/>
+                            <constraint firstItem="g9o-nA-3xD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="fab-0c-jZg"/>
+                            <constraint firstItem="Ppa-6z-52C" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="ivg-g2-Wbb"/>
+                            <constraint firstItem="E2Q-hY-jgb" firstAttribute="top" secondItem="Ppa-6z-52C" secondAttribute="bottom" constant="10" id="ngu-FK-Jjn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="E2Q-hY-jgb" secondAttribute="trailing" constant="120" id="oF7-E8-CEz"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="129.91071428571428"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Unit-Convertor-WP" width="333.5" height="333.5"/>
+        <image name="unit-convertor-logo" width="170.5" height="170.5"/>
+    </resources>
 </document>
