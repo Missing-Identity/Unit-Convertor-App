@@ -79,9 +79,11 @@
 		7234534E24F2735200DC5B44 /* unit-convertor */ = {
 			isa = PBXGroup;
 			children = (
+				7234537324F273B900DC5B44 /* Model */,
+				7234537224F273B400DC5B44 /* View */,
+				7234537124F273A900DC5B44 /* Controller */,
 				7234534F24F2735200DC5B44 /* AppDelegate.swift */,
 				7234535124F2735200DC5B44 /* SceneDelegate.swift */,
-				7234535324F2735200DC5B44 /* ViewController.swift */,
 				7234535524F2735200DC5B44 /* Main.storyboard */,
 				7234535824F2736700DC5B44 /* Assets.xcassets */,
 				7234535A24F2736700DC5B44 /* LaunchScreen.storyboard */,
@@ -97,6 +99,28 @@
 				7234536824F2736800DC5B44 /* Info.plist */,
 			);
 			path = "unit-convertorTests";
+			sourceTree = "<group>";
+		};
+		7234537124F273A900DC5B44 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7234535324F2735200DC5B44 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7234537224F273B400DC5B44 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7234537324F273B900DC5B44 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
