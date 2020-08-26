@@ -18,9 +18,26 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var WeightTxtField2: UILabel!
     
+    @IBOutlet weak var DistInfoLbl: UILabel!
+    
+    @IBOutlet weak var WeightInfoLbl: UILabel!
+    
+    @IBOutlet weak var DistResultLbl: UILabel!
+    
+    @IBOutlet weak var WeightResultLbl: UILabel!
+    
+    @IBOutlet weak var DistTxtField: DistWeightTxtField!
+    
+    @IBOutlet weak var WeightTxtField: DistWeightTxtField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        DistResultLbl.isHidden = true
+        DistInfoLbl.isHidden = true
+        WeightInfoLbl.isHidden = true
+        WeightResultLbl.isHidden = true
+        
     }
 
     @IBAction func ToggleBtnDistPressed(_ sender: UIButton) {
@@ -54,6 +71,70 @@ class ViewController: UIViewController {
             
         }
     }
+    
+    func distcalc() {
+        
+        if let distance = DistTxtField.text {
+            
+            if let dist = Double(distance){
+                
+                if DistTxtField1.text == "Miles"{
+                    
+                    DistInfoLbl.text = "\(dist) miles in km"
+                    DistResultLbl.text = "\(Distance.milestokilometers(Distmiles: dist))"
+                    
+                }
+                
+                else{
+                    
+                    DistInfoLbl.text = "\(dist) km in miles"
+                    DistResultLbl.text = "\(Distance2.kilometerstomiles(Distkm: dist))"
+                    
+                }
+            }
+        }
+    }
+    
+    func weightcalc() {
+        
+        if let weight = WeightTxtField.text {
+            
+            if let w = Double(weight) {
+                
+                if WeightTxtField1.text == "Pounds"{
+                    
+                    WeightInfoLbl.text = "\(w) lbs -> kgs"
+                    WeightResultLbl.text = "\(Weight.poundstokg(Weightp: w))"
+                    
+                }
+                else {
+                    
+                    WeightInfoLbl.text = "\(w) kgs -> lbs"
+                    WeightResultLbl.text = "\(Weight2.kgtopounds(Weightk: w))"
+                    
+                }
+            }
+        }
+    }
+    
+    @IBAction func DistCalcBtnPressed(_ sender: Any) {
+        
+        distcalc()
+        view.endEditing(true)
+        DistResultLbl.isHidden = false
+        DistInfoLbl.isHidden = false
+    }
+    
+    @IBAction func WeightCalcBtnPressed(_ sender: Any) {
+        
+        weightcalc()
+        view.endEditing(true)
+        WeightInfoLbl.isHidden = false
+        WeightResultLbl.isHidden = false
+        
+    }
+    
+    
     
     
 }

@@ -1,23 +1,23 @@
 //
-//  WeightTxtField.swift
+//  DistWeightTxtField.swift
 //  unit-convertor
 //
-//  Created by Unmilan on 26/08/20.
+//  Created by Unmilan on 24/08/20.
 //  Copyright © 2020 Unmilan. All rights reserved.
 //
 
 import UIKit
 
-class WeightTxtField: UITextField {
+class DistTxtField: UITextField {
     
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        customisedView()
+        customview()
         
     }
 
-    func customisedView() {
+    func customview() {
         
         backgroundColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.2)
         layer.cornerRadius = 10.0

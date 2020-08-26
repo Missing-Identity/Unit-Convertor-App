@@ -26,3 +26,21 @@ class CalcBtn: UIButton {
     }
 
 }
+
+class ClearBtn: UIButton {
+    
+    override func awakeFromNib() {
+        
+        super.awakeFromNib()
+        customview()
+        
+    }
+    
+    func customview() {
+        
+        backgroundColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.4)
+        clipsToBounds = true
+        layer.cornerRadius = 10.0
+        
+    }
+}

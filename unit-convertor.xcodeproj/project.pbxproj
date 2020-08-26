@@ -14,9 +14,13 @@
 		7234535924F2736700DC5B44 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7234535824F2736700DC5B44 /* Assets.xcassets */; };
 		7234535C24F2736700DC5B44 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7234535A24F2736700DC5B44 /* LaunchScreen.storyboard */; };
 		7234536724F2736800DC5B44 /* unit_convertorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7234536624F2736800DC5B44 /* unit_convertorTests.swift */; };
-		724DF51724F3D2BC0052E6D7 /* DistWeightTxtField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724DF51624F3D2BC0052E6D7 /* DistWeightTxtField.swift */; };
-		724DF51924F3D9120052E6D7 /* CalcBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724DF51824F3D9110052E6D7 /* CalcBtn.swift */; };
-		72EEE53F24F6857000F6D790 /* WeightTxtField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EEE53E24F6857000F6D790 /* WeightTxtField.swift */; };
+		724DF51924F3D9120052E6D7 /* CalcClearBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724DF51824F3D9110052E6D7 /* CalcClearBtn.swift */; };
+		72EEE53F24F6857000F6D790 /* DistWeightTxtField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EEE53E24F6857000F6D790 /* DistWeightTxtField.swift */; };
+		72EEE54124F6876D00F6D790 /* DistCalcMTK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EEE54024F6876D00F6D790 /* DistCalcMTK.swift */; };
+		72EEE54224F68ADF00F6D790 /* DistCalcMTK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EEE54024F6876D00F6D790 /* DistCalcMTK.swift */; };
+		72EEE54424F6B4E700F6D790 /* DistCalcKTM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EEE54324F6B4E700F6D790 /* DistCalcKTM.swift */; };
+		72EEE54624F6B75D00F6D790 /* WeightCalcPTK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EEE54524F6B75D00F6D790 /* WeightCalcPTK.swift */; };
+		72EEE54824F6B76D00F6D790 /* WeightCalcKTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72EEE54724F6B76D00F6D790 /* WeightCalcKTP.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,9 +45,12 @@
 		7234536224F2736800DC5B44 /* unit-convertorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "unit-convertorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7234536624F2736800DC5B44 /* unit_convertorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = unit_convertorTests.swift; sourceTree = "<group>"; };
 		7234536824F2736800DC5B44 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		724DF51624F3D2BC0052E6D7 /* DistWeightTxtField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistWeightTxtField.swift; sourceTree = "<group>"; };
-		724DF51824F3D9110052E6D7 /* CalcBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcBtn.swift; sourceTree = "<group>"; };
-		72EEE53E24F6857000F6D790 /* WeightTxtField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightTxtField.swift; sourceTree = "<group>"; };
+		724DF51824F3D9110052E6D7 /* CalcClearBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcClearBtn.swift; sourceTree = "<group>"; };
+		72EEE53E24F6857000F6D790 /* DistWeightTxtField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistWeightTxtField.swift; sourceTree = "<group>"; };
+		72EEE54024F6876D00F6D790 /* DistCalcMTK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistCalcMTK.swift; sourceTree = "<group>"; };
+		72EEE54324F6B4E700F6D790 /* DistCalcKTM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistCalcKTM.swift; sourceTree = "<group>"; };
+		72EEE54524F6B75D00F6D790 /* WeightCalcPTK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightCalcPTK.swift; sourceTree = "<group>"; };
+		72EEE54724F6B76D00F6D790 /* WeightCalcKTP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightCalcKTP.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,9 +125,8 @@
 		7234537224F273B400DC5B44 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				724DF51624F3D2BC0052E6D7 /* DistWeightTxtField.swift */,
-				724DF51824F3D9110052E6D7 /* CalcBtn.swift */,
-				72EEE53E24F6857000F6D790 /* WeightTxtField.swift */,
+				724DF51824F3D9110052E6D7 /* CalcClearBtn.swift */,
+				72EEE53E24F6857000F6D790 /* DistWeightTxtField.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -128,6 +134,10 @@
 		7234537324F273B900DC5B44 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				72EEE54024F6876D00F6D790 /* DistCalcMTK.swift */,
+				72EEE54324F6B4E700F6D790 /* DistCalcKTM.swift */,
+				72EEE54524F6B75D00F6D790 /* WeightCalcPTK.swift */,
+				72EEE54724F6B76D00F6D790 /* WeightCalcKTP.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -233,12 +243,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72EEE54624F6B75D00F6D790 /* WeightCalcPTK.swift in Sources */,
+				72EEE54124F6876D00F6D790 /* DistCalcMTK.swift in Sources */,
+				72EEE54824F6B76D00F6D790 /* WeightCalcKTP.swift in Sources */,
 				7234535424F2735200DC5B44 /* ViewController.swift in Sources */,
+				72EEE54424F6B4E700F6D790 /* DistCalcKTM.swift in Sources */,
 				7234535024F2735200DC5B44 /* AppDelegate.swift in Sources */,
 				7234535224F2735200DC5B44 /* SceneDelegate.swift in Sources */,
-				724DF51924F3D9120052E6D7 /* CalcBtn.swift in Sources */,
-				724DF51724F3D2BC0052E6D7 /* DistWeightTxtField.swift in Sources */,
-				72EEE53F24F6857000F6D790 /* WeightTxtField.swift in Sources */,
+				724DF51924F3D9120052E6D7 /* CalcClearBtn.swift in Sources */,
+				72EEE53F24F6857000F6D790 /* DistWeightTxtField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72EEE54224F68ADF00F6D790 /* DistCalcMTK.swift in Sources */,
 				7234536724F2736800DC5B44 /* unit_convertorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
