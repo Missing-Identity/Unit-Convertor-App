@@ -58,7 +58,7 @@
                                 </constraints>
                                 <state key="normal" title="Button" image="Next-Button-Icon"/>
                                 <connections>
-                                    <action selector="ToggleBtnDistPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gkm-74-gZd"/>
+                                    <action selector="WeightToggleBtnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tvb-xS-fNe"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Miles" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NZb-n6-mF9">
@@ -109,11 +109,33 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ucQ-xT-nwT">
+                                <rect key="frame" x="32" y="474" width="97" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="CWN-qV-EkX"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XLO-Ij-T09">
+                                <rect key="frame" x="284" y="474" width="100" height="37"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="ilS-SA-KOO"/>
+                                    <constraint firstAttribute="height" constant="37" id="uag-9o-Lzi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                                <state key="normal" title="Calculate">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="pza-Zj-uO4" firstAttribute="top" secondItem="NZb-n6-mF9" secondAttribute="bottom" constant="10" id="0zb-84-CKS"/>
+                            <constraint firstItem="ucQ-xT-nwT" firstAttribute="centerX" secondItem="dqg-E1-ozs" secondAttribute="centerX" id="28R-t6-v0W"/>
                             <constraint firstItem="NZb-n6-mF9" firstAttribute="top" secondItem="E2Q-hY-jgb" secondAttribute="bottom" constant="24.5" id="2qk-0k-lyh"/>
+                            <constraint firstItem="XLO-Ij-T09" firstAttribute="centerX" secondItem="YNC-sb-75Z" secondAttribute="centerX" id="4aX-SO-Lup"/>
                             <constraint firstItem="dqg-E1-ozs" firstAttribute="centerX" secondItem="NZb-n6-mF9" secondAttribute="centerX" id="CNS-3h-RCb"/>
                             <constraint firstItem="Ppa-6z-52C" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Clk-eb-fAj"/>
                             <constraint firstItem="g9o-nA-3xD" firstAttribute="leading" secondItem="Ppa-6z-52C" secondAttribute="leading" id="FJ7-CE-L8z"/>
@@ -131,9 +153,11 @@
                             <constraint firstItem="YNC-sb-75Z" firstAttribute="centerX" secondItem="OEk-Yi-oHS" secondAttribute="centerX" id="cJl-gj-4lF"/>
                             <constraint firstItem="pza-Zj-uO4" firstAttribute="centerX" secondItem="NZb-n6-mF9" secondAttribute="centerX" id="dbQ-uR-mF3"/>
                             <constraint firstItem="g9o-nA-3xD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="fab-0c-jZg"/>
+                            <constraint firstItem="ucQ-xT-nwT" firstAttribute="top" secondItem="dqg-E1-ozs" secondAttribute="bottom" constant="10" id="fl2-Os-1IO"/>
                             <constraint firstItem="ZG5-uo-Afg" firstAttribute="centerX" secondItem="OEk-Yi-oHS" secondAttribute="centerX" id="hh9-8c-vJZ"/>
                             <constraint firstItem="Ppa-6z-52C" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="ivg-g2-Wbb"/>
                             <constraint firstItem="dqg-E1-ozs" firstAttribute="top" secondItem="pza-Zj-uO4" secondAttribute="bottom" constant="72" id="jp7-Im-1cA"/>
+                            <constraint firstItem="XLO-Ij-T09" firstAttribute="top" secondItem="YNC-sb-75Z" secondAttribute="bottom" constant="10" id="krB-yX-I4s"/>
                             <constraint firstItem="OEk-Yi-oHS" firstAttribute="top" secondItem="E2Q-hY-jgb" secondAttribute="bottom" constant="24.5" id="lLx-hQ-zV8"/>
                             <constraint firstItem="E2Q-hY-jgb" firstAttribute="top" secondItem="Ppa-6z-52C" secondAttribute="bottom" constant="10" id="ngu-FK-Jjn"/>
                             <constraint firstItem="4uK-S8-4zG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="njg-GZ-5Ea"/>
@@ -144,6 +168,8 @@
                     <connections>
                         <outlet property="DistTxtField1" destination="NZb-n6-mF9" id="vJV-bw-fe7"/>
                         <outlet property="DistTxtField2" destination="OEk-Yi-oHS" id="2R2-8G-jSg"/>
+                        <outlet property="WeightTxtField1" destination="dqg-E1-ozs" id="BOo-hJ-Xln"/>
+                        <outlet property="WeightTxtField2" destination="YNC-sb-75Z" id="fy9-ts-tNW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -14,6 +14,10 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var DistTxtField2: UILabel!
     
+    @IBOutlet weak var WeightTxtField1: UILabel!
+    
+    @IBOutlet weak var WeightTxtField2: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -34,6 +38,23 @@ class ViewController: UIViewController {
             
         }
     }
+    
+    @IBAction func WeightToggleBtnPressed(_ sender: UIButton) {
+        
+        if WeightTxtField1.text == "Pounds" {
+            
+            WeightTxtField1.text = "Kilograms"
+            WeightTxtField2.text = "Pounds"
+            
+        }
+        else {
+            
+            WeightTxtField1.text = "Pounds"
+            WeightTxtField2.text = "Kilograms"
+            
+        }
+    }
+    
     
 }
 
