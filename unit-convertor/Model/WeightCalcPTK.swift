@@ -12,7 +12,6 @@ class Weight {
     
     class func poundstokg(Weightp p: Double) -> Double {
         
-        return(p/2.205)
-        
+        return(round(1000*p/2.205)/1000)
     }
 }

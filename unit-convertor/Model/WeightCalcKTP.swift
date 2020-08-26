@@ -12,7 +12,7 @@ class Weight2 {
     
     class func kgtopounds(Weightk kg: Double) -> Double {
         
-        return(kg*2.205)
+        return(round(1000*kg*2.205)/1000)
         
     }
 }

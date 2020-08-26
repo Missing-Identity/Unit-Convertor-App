@@ -103,13 +103,13 @@ class ViewController: UIViewController {
                 
                 if WeightTxtField1.text == "Pounds"{
                     
-                    WeightInfoLbl.text = "\(w) lbs -> kgs"
+                    WeightInfoLbl.text = "\(w) lbs in kgs"
                     WeightResultLbl.text = "\(Weight.poundstokg(Weightp: w))"
                     
                 }
                 else {
                     
-                    WeightInfoLbl.text = "\(w) kgs -> lbs"
+                    WeightInfoLbl.text = "\(w) kgs in lbs"
                     WeightResultLbl.text = "\(Weight2.kgtopounds(Weightk: w))"
                     
                 }
@@ -134,8 +134,16 @@ class ViewController: UIViewController {
         
     }
     
-    
-    
+    @IBAction func ClearBtnPressed(_ sender: Any) {
+        
+        WeightInfoLbl.isHidden = true
+        WeightResultLbl.isHidden = true
+        DistInfoLbl.isHidden = true
+        DistResultLbl.isHidden = true
+        DistTxtField.text = ""
+        WeightTxtField.text = ""
+        
+    }
     
 }
 

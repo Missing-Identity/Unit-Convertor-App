@@ -12,6 +12,6 @@ class Distance2 {
     
     class func kilometerstomiles(Distkm km: Double) ->Double {
         
-        return (km/1.609)
+        return (round(1000*km/1.609)/1000)
     }
 }
