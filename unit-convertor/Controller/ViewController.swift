@@ -87,7 +87,7 @@ class ViewController: UIViewController {
                 
                 else{
                     
-                    DistInfoLbl.text = "\(dist) kilometer in miles"
+                    DistInfoLbl.text = "\(dist) kms in miles"
                     DistResultLbl.text = "\(Distance2.kilometerstomiles(Distkm: dist))"
                     
                 }
